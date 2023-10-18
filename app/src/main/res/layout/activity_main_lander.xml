@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context=".MainLander"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="69dp"
+        android:src="@drawable/word" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:background="@color/white">
+
+
+        <!-- Card for "Learn English Words" -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_learn_english"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+            <!-- Card content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- ImageView for icon -->
+                <ImageView
+                    android:layout_width="361dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/english" />
+
+                <!-- TextView for functionality name -->
+                <TextView
+                    android:layout_width="338dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="Learn English Words"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card for "Translate" -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_learn_english"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+            <!-- Card content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- ImageView for icon -->
+                <ImageView
+                    android:layout_width="361dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/dicsplash" />
+
+                <!-- TextView for functionality name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Translate"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

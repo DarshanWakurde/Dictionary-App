@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:background="@drawable/image2"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="35sp"
+    android:fontFamily="@font/my1"
+    android:layout_marginBottom="30dp"
+    android:textColor="@color/black"
+    android:text="Language"
+    android:textStyle="bold"
+    android:padding="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fromLang"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:src="@drawable/baseline_arrow_forward_24"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/toLang"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Source Text Here"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="    Translated text here"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:id="@+id/saySomthing"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/baseline_mic_24" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:text="Say Something"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:id="@+id/translate"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"/>
+
+
+</LinearLayout>
