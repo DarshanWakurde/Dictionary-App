@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,12 @@
         android:theme="@style/Theme.A"
         tools:targetApi="31">
         <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegister"
+            android:exported="false" />
+        <activity
             android:name=".MainLander"
             android:exported="false" />
         <activity
@@ -27,13 +33,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Translator"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
